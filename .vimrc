@@ -11,4 +11,4 @@ set softtabstop=4
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 nnoremap <F5> :UndotreeToggle<CR>
-
+nnoremap <C-n> :NERDTreeToggle<CR>
