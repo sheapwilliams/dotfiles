@@ -20,5 +20,5 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 "autocmd VimEnter * NERDTree | wincmd p
 
 " Ale
-let g:ale_linters={'sh': ['shellcheck'], 'cmake': ['cmake-lint'], 'python': ['pylint']}
+let g:ale_linters={'sh': ['shellcheck'], 'cmake': ['cmake-lint'], 'python': ['pylint'], 'cpp': ['clangd']}
 let g:ale_fixers={'cmake': ['cmake-format'], 'python': ['black'], 'cpp': ['clang-format']}
