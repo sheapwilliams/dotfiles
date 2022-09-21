@@ -9,6 +9,7 @@ set expandtab
 set softtabstop=4
 syntax on
 filetype indent on
+set backspace=indent,eol,start
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
