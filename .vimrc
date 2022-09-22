@@ -22,3 +22,4 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 " Ale
 let g:ale_linters={'sh': ['shellcheck'], 'cmake': ['cmake-lint'], 'python': ['pylint'], 'cpp': ['clangd']}
 let g:ale_fixers={'cmake': ['cmakeformat'], 'python': ['black'], 'cpp': ['clang-format']}
+nmap <F9> :ALEFix<CR>
