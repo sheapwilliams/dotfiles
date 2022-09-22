@@ -14,6 +14,9 @@ set matchpairs=(:),{:},[:],<:>
 
 let mapleader=" "
 
+" Filetypes
+au! BufRead,BufNewFile *.toolchain set filetype=cmake
+
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 nnoremap <F5> :UndotreeToggle<CR>
