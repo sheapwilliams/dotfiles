@@ -11,6 +11,8 @@ syntax on
 filetype indent on
 set backspace=indent,eol,start
 
+let mapleader=" "
+
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 nnoremap <F5> :UndotreeToggle<CR>
