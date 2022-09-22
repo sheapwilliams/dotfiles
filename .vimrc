@@ -10,6 +10,7 @@ set softtabstop=4
 syntax on
 filetype indent on
 set backspace=indent,eol,start
+set matchpairs=(:),{:},[:],<:>
 
 let mapleader=" "
 
