@@ -1,0 +1,9 @@
+set(CMAKE_CXX_COMPILER "/opt/homebrew/opt/llvm/bin/clang++")
+set(CMAKE_C_COMPILER "/opt/homebrew/opt/llvm/bin/clang")
+set(CMAKE_CXX_FLAGS
+    "-I/opt/homebrew/opt/llvm/include -stdlib=libc++ -fexperimental-library")
+set(CMAKE_EXE_LINKER_FLAGS_INIT
+    "-L/opt/homebrew/opt/llvm/lib/c++ -Wl,-rpath,/opt/homebrew/opt/llvm/lib/c++"
+)
+set(CMAKE_MODULE_LINKER_FLAGS_INIT "-L/opt/homebrew/opt/llvm/lib/c++")
+set(CMAKE_SHARED_LINKER_FLAGS_INIT "-L/opt/homebrew/opt/llvm/lib/c++")
