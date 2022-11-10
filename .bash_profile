@@ -4,3 +4,5 @@ if [[ -f ".bash_profile_local" ]] ; then
 fi
 
 source .bashrc
+
+export $PATH=$PATH:~/.local/bin
