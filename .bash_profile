@@ -5,4 +5,4 @@ fi
 
 source .bashrc
 
-export $PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/.local/bin
