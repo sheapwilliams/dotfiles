@@ -25,3 +25,6 @@
 [submodule "vim/pack/plugins/start/vim-gutentags"]
 	path = vim/pack/plugins/start/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule "vim/pack/plugins/start/tabular"]
+	path = vim/pack/plugins/start/tabular
+	url = https://github.com/godlygeek/tabular.git
