@@ -11,6 +11,7 @@ syntax on
 filetype indent on
 set backspace=indent,eol,start
 set matchpairs=(:),{:},[:],<:>
+set noswapfile
 
 let mapleader=" "
 
