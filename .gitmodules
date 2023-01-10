@@ -28,3 +28,6 @@
 [submodule "vim/pack/plugins/start/tabular"]
 	path = vim/pack/plugins/start/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/pack/plugins/start/YouCompleteMe"]
+	path = vim/pack/plugins/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
