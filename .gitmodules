@@ -31,3 +31,9 @@
 [submodule "vim/pack/plugins/start/YouCompleteMe"]
 	path = vim/pack/plugins/start/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "vim/pack/plugins/start/gutentags_plus"]
+	path = vim/pack/plugins/start/gutentags_plus
+	url = https://github.com/skywind3000/gutentags_plus.git
+[submodule "vim/pack/plugins/start/vim-fugitive"]
+	path = vim/pack/plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
