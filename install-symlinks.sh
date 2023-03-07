@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mv ~/.bashrc ~/.bashrc.orig
+
 ln -s "${PWD}/.bashrc" "${HOME}/.bashrc"
 ln -s "${PWD}/.bash_profile" ${HOME}/.bash_profile
 ln -s "${PWD}/vim" "${HOME}/.vim"
@@ -13,4 +15,4 @@ if [ $(uname -s) == "Darwin" ] ; then
   LOCAL_PROFILE=.bash_profile_mac
 fi
 
-ln -s ${LOCAL_PROFILE} ${HOME}/.bash_profile_local
+ln -s "${PWD}/${LOCAL_PROFILE}" ${HOME}/.bash_profile_local
