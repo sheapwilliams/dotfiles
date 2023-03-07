@@ -3,10 +3,10 @@ set background=dark
 
 set nu
 
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
-set softtabstop=2
+set softtabstop=4
 set hlsearch
 syntax on
 filetype indent on
@@ -28,6 +28,31 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 "autocmd VimEnter * NERDTree | wincmd p
 
 " Ale
-let g:ale_linters={'sh': ['shellcheck'], 'cmake': ['cmake-lint'], 'python': ['pylint'], 'cpp': ['clangd']}
+let g:ale_linters={'sh': ['shellcheck'], 'cmake': ['cmake-lint'], 'python': ['pylint'], 'cpp': ['clangd', 'clangtidy']}
 let g:ale_fixers={'cmake': ['cmakeformat'], 'python': ['black'], 'cpp': ['clang-format']}
+let g:ale_cpp_clangd_executable = '/usr/bin/clangd-16'
+let g:ale_cpp_build_dir_names = ['build', 'build-debug']
+let g:ale_c_build_dir_names = ['build', 'build-debug']
 nmap <F9> :ALEFix<CR>
+
+" gutentags_plus
+let g:gutentags_modules = ['ctags', 'gtags_cscope']
+let g:gutentags_project_root = ['.root', '.git']
+let g:gutentags_cache_dir = expand('~/.cache/tags')
+let g:gutentags_plus_switch = 1 " change focus to quickfix window after search (optional).
+let g:gutentags_plus_nomap = 1
+let g:gutentags_define_advanced_commands = 1
+let g:gutentags_gtags_extra_args = "--skip-unreadable"
+
+noremap <silent> <leader>gs :GscopeFind s <C-R><C-W><cr>
+noremap <silent> <leader>gg :GscopeFind g <C-R><C-W><cr>
+noremap <silent> <leader>gc :GscopeFind c <C-R><C-W><cr>
+noremap <silent> <leader>gt :GscopeFind t <C-R><C-W><cr>
+noremap <silent> <leader>ge :GscopeFind e <C-R><C-W><cr>
+noremap <silent> <leader>gf :GscopeFind f <C-R>=expand("<cfile>")<cr><cr>
+noremap <silent> <leader>gi :GscopeFind i <C-R>=expand("<cfile>")<cr><cr>
+noremap <silent> <leader>gd :GscopeFind d <C-R><C-W><cr>
+noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
+noremap <silent> <leader>gz :GscopeFind z <C-R><C-W><cr>
+
+silent! helptags ALL
