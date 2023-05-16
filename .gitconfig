@@ -3,3 +3,5 @@
 [user]
 	name = Shea Williams
 	email = sheapwilliams@gmail.com
+[merge]
+	tool = vimdiff
