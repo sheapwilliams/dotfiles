@@ -43,6 +43,7 @@ let g:gutentags_plus_switch = 1 " change focus to quickfix window after search (
 let g:gutentags_plus_nomap = 1
 let g:gutentags_define_advanced_commands = 1
 let g:gutentags_gtags_extra_args = "--skip-unreadable"
+"let g:gutentags_trace = 1
 
 noremap <silent> <leader>gs :GscopeFind s <C-R><C-W><cr>
 noremap <silent> <leader>gg :GscopeFind g <C-R><C-W><cr>
