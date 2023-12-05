@@ -1,6 +1,6 @@
 # set -x
 
-export PATH=/opt/homebrew/bin:/opt/homebrew/opt/llvm/bin:$PATH
+export PATH=/opt/homebrew/bin:/opt/homebrew/opt/llvm/bin:${PATH}:${HOME}/.local/bin
 
 if [[ -f "${HOME}/.bash_profile_local" ]] ; then
   source "${HOME}"/.bash_profile_local
