@@ -32,6 +32,7 @@ let g:ale_linters={'sh': ['shellcheck'], 'cmake': ['cmake-lint'], 'python': ['py
 let g:ale_fixers={'cmake': ['cmakeformat'], 'python': ['black'], 'cpp': ['clang-format']}
 let g:ale_cpp_clangd_executable = '/usr/bin/clangd-17'
 let g:ale_cpp_clangtidy_executable = '/usr/bin/clang-tidy-17'
+let g:ale_c_clangformat_executable = '/usr/bin/clang-format-17'
 let g:ale_cpp_build_dir_names = ['build', 'build-debug']
 let g:ale_c_build_dir_names = ['build', 'build-debug']
 nmap <F9> :ALEFix<CR>
