@@ -1,9 +1,7 @@
-#include <GUnit/GAssert.h>
-#include <GUnit/GTest.h>
+#include <gtest/gtest.h>
 
-#include <vector>
-
-GTEST("test stuff") {
-  SHOULD("test test") {
+namespace {
+TEST(SampleTest, sample1) {
+    EXPECT_EQ(1, 1);
   }
 }

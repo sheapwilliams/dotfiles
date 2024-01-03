@@ -15,13 +15,13 @@ set_property(TARGET main PROPERTY CXX_STANDARD 23)
 
 add_subdirectory(vendor/googletest)
 
-function(add_gunit_test target source)
+function(add_unit_test target source)
   add_executable(${target} ${source} ${ARGN})
   set_property(TARGET ${target} PROPERTY CXX_STANDARD 23)
   target_include_directories(
     ${target}
     PUBLIC "vendor/googletest/googletest/include"
-           "vendor/googletest/googlemock/include" "vendor/GUnit/include"
+           "vendor/googletest/googlemock/include"
            "include")
   target_link_libraries(${target}
                         "-L${CMAKE_BINARY_DIR}/lib -lgtest -lgtest_main")
@@ -33,4 +33,4 @@ function(add_gunit_test target source)
     DEPENDS ${target})
 endfunction()
 
-add_gunit_test(test test/unit/test.cpp)
+add_unit_test(test unit/test.cpp)
