@@ -28,8 +28,8 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 "autocmd VimEnter * NERDTree | wincmd p
 
 " Ale
-let g:ale_linters={'sh': ['shellcheck'], 'cmake': ['cmake-lint'], 'python': ['pylint'], 'cpp': ['clangd', 'clangtidy']}
-let g:ale_fixers={'cmake': ['cmakeformat'], 'python': ['black'], 'cpp': ['clang-format']}
+let g:ale_linters={'sh': ['shellcheck'], 'cmake': ['cmake-lint'], 'python': ['ruff'], 'cpp': ['clangd', 'clangtidy']}
+let g:ale_fixers={'cmake': ['cmakeformat'], 'python': ['ruff_format'], 'cpp': ['clang-format']}
 let g:ale_cpp_clangd_executable = '/usr/bin/clangd-17'
 let g:ale_cpp_clangtidy_executable = '/usr/bin/clang-tidy-17'
 let g:ale_c_clangformat_executable = '/usr/bin/clang-format-17'
