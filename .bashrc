@@ -2,7 +2,7 @@
 
 export EDITOR=vi
 
-alias d='ls -la --color'
+alias d='ls -la --color=auto'
 
 set -o vi
 
