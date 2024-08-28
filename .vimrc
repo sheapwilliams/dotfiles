@@ -28,10 +28,12 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 "autocmd VimEnter * NERDTree | wincmd p
 
 " Ale
-let g:ale_linters={'sh': ['shellcheck'], 'cmake': ['cmake-lint'], 'python': ['ruff'], 'cpp': ['clangd', 'clangtidy']}
-let g:ale_fixers={'cmake': ['cmakeformat'], 'python': ['ruff_format'], 'cpp': ['clang-format']}
+let g:ale_linters={'sh': ['shellcheck'], 'cmake': ['cmake-lint'], 'python': ['ruff'], 'cpp': ['clangd', 'clangtidy'], 'c': ['clangd', 'clangtidy']}
+let g:ale_fixers={'cmake': ['cmakeformat'], 'python': ['ruff_format'], 'cpp': ['clang-format'], 'c': ['clang-format']}
 let g:ale_cpp_clangd_executable = '/usr/bin/clangd-18'
+let g:ale_c_clangd_executable = '/usr/bin/clangd-18'
 let g:ale_cpp_clangtidy_executable = '/usr/bin/clang-tidy-18'
+let g:ale_c_clangtidy_executable = '/usr/bin/clang-tidy-18'
 let g:ale_c_clangformat_executable = '/usr/bin/clang-format-18'
 let g:ale_cpp_build_dir_names = ['build', 'build-debug']
 let g:ale_c_build_dir_names = ['build', 'build-debug']
