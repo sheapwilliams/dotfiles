@@ -1,6 +1,6 @@
 
-if [[ -f ".bash_profile_local" ]] ; then
-  source .bash_profile_local
+if [[ -f "${HOME}/.bash_profile_local" ]] ; then
+  source "${HOME}/.bash_profile_local"
 fi
 
 if [[ $- =~ i ]] ; then
