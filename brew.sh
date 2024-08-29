@@ -4,5 +4,5 @@
 
 brew install secretive
 brew install bash-completion llvm tree tmux ninja go cmake direnv clang-format tig python@3.12
-brew install vim
+brew install universal-ctags pipenv vim
 
