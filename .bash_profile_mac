@@ -17,3 +17,8 @@ then
     done
   fi
 fi
+
+if [[ -r "/Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash" ]]
+then
+  source "/Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash"
+fi
