@@ -9,3 +9,5 @@
 # Cargo uses the wrong url for ssh auth to github - fix it here
 [url "ssh://git@github.com"]
     insteadOf = ssh://github.com
+[mergetool]
+	keepBackup = false
