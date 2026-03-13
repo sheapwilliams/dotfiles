@@ -8,3 +8,9 @@ if [[ $- =~ i ]] ; then
 fi
 
 export PATH=$PATH:~/.local/bin
+
+# Git autocompletions
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
+
