@@ -2,12 +2,17 @@
     defaultBranch = main
 [user]
     name = Shea Williams
-    email = sheapwilliams@gmail.com
+    email = 54335625+sheapwilliams@users.noreply.github.com
 [merge]
     tool = vimdiff
 
 # Cargo uses the wrong url for ssh auth to github - fix it here
 [url "ssh://git@github.com"]
     insteadOf = ssh://github.com
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 [mergetool]
-	keepBackup = false
+    keepBackup = false
