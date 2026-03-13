@@ -2,7 +2,7 @@
 
 . "$HOME/.cargo/env"
 
-export PATH=/opt/homebrew/bin:/opt/homebrew/opt/llvm/bin:${PATH}
+export PATH=/opt/homebrew/bin:/opt/homebrew/opt/llvm/bin:${PATH}:~/go/bin:${HOME}/.foundry/bin
 
 if type brew &>/dev/null
 then
@@ -22,3 +22,9 @@ if [[ -r "/Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-comp
 then
   source "/Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash"
 fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/sheawilliams/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/Users/sheawilliams/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/sheawilliams/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/sheawilliams/Downloads/google-cloud-sdk/completion.bash.inc'; fi
