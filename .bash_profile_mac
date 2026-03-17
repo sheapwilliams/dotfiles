@@ -1,6 +1,6 @@
 # set -x
 
-. "$HOME/.cargo/env"
+if [ -d "$HOME/.cargo" ]; then . "$HOME/.cargo/env"; fi
 
 export PATH=/opt/homebrew/bin:/opt/homebrew/opt/llvm/bin:${PATH}:~/go/bin:${HOME}/.foundry/bin
 
