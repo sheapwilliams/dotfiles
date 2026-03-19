@@ -13,3 +13,8 @@ export PATH=$PATH:~/.local/bin
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
+
+# Docker autocompletions
+if [ -f ~/.docker-completion.bash ]; then
+    . ~/.docker-completion.bash
+fi
